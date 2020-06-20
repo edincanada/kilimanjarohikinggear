@@ -1,0 +1,18 @@
+<doctrine-mapping
+ xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                     http://raw.github.com/doctrine/doctrine2/master/doctrine-mapping.xsd">
+
+<entity name="KhgManufacturer" table="_tblKhgManufacturers">
+ <id name="_manufacturerId" column="_id" type="integer">
+  <generator strategy="AUTO" />
+ </id>
+ <field name="_name" column="_name" type="string" length="128" />
+ <field name="_description" column="_description" type="string" length="1024" />
+ <field name="_address" column="_address" type="string" length="1024" />
+ <field name="_phoneNumber" column="_phone" type="string" length="128" />
+ <field name="_email" column="_email" type="string" length="1024" />
+ <one-to-many field="_items" target-entity="KhgItem" mapped-by="_manufacturer" />
+</entity>
+</doctrine-mapping>

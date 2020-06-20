@@ -1,0 +1,369 @@
+#divHeader , div.cssDivHeader
+{
+  width : 100% ;
+  text-align : center ;
+  padding-top : 20px ;
+  padding-bottom : 30px ;
+}
+
+#spanTitle , span.cssSpanTitle
+{
+  font-size : 24px ;
+  font-family : Arial , Helvetica , sans-serif ;
+  font-style : italic ;
+}
+
+#divOptions , div.cssDivOptions
+{
+  padding-top : 15px ;
+  font-family : Arial , Helvetica , sans-serif ;
+}
+
+a.cssAncHeaderLink
+{
+  padding-left : 5px ;
+  padding-right : 5px ;
+
+  color : blue ;
+
+  text-decoration-line : underline ;
+  text-decoration-color : blue ;
+  text-decoration-style : solid ;
+}
+
+div.cssDivContentBackground
+{
+  width : 100% ;
+  background-color : #0a7f6d ;
+  padding-top : 10px ;
+  padding-bottom : 15px ;
+  background-color : #0a7f6d ;
+}
+
+div.cssDivClear
+{
+  clear : both ;
+}
+
+#divContent , div.cssDivContent , div.cssManufacturerEditContent
+{
+  width : 80% ;
+  margin-top : 10px ;
+  margin-bottom : 10px ;
+  margin-left : auto ;
+  margin-right : auto ;
+
+  background-color : #0a7f6d ;
+}
+
+#divItemContainer ,
+div.cssDivItemContainer ,
+#divManufacturerContainer ,
+div.cssDivManufacturerContainer
+{
+  float : left ;
+  width : 50% ;
+}
+
+#divItems div ,
+div.cssDivItems div ,
+#divManufacturers div ,
+div.cssDivManufacturers div
+{
+  font-size : 12px ;
+}
+
+#divInfo , div.cssDivInfo
+{
+  float : left ;
+  width : 50% ;
+  padding-top : 10px ;
+}
+
+div.cssDivInfoBox
+{
+  margin-bottom : 10px ;
+  margin-left : 10px ;
+  border-width : 1px 1px 1px 1px ;
+  border-color: rgb( 218 , 218 , 218 ) ;
+  border-style : solid solid solid solid ;
+  border-radius : 10px;
+
+  background-color:#dcdcdc ;
+  color : rgb( 85 , 85 , 85 ) ;
+
+  font-family : Verdana , Arial , sans-serif ;
+  font-size : 18px ;
+
+  padding-top : 5px ;
+  padding-bottom : 5px ;
+  padding-left : 10px ;
+}
+
+#divPicture , div.cssDivPicture
+{
+  text-align : center ;
+}
+
+img.cssImgPicture
+{
+  height : 250px ;
+}
+
+div.cssItemEditContent
+{
+  width : 100% ;
+  background-color : #0a7f6d ;
+  padding-top : 10px ;
+  padding-bottom : 15px ;
+}
+
+#ulErrorList , ul.cssUlErrorList
+{
+  font-size: 16px ;
+  color: yellow ;
+}
+
+table.tblItemEdit , table.tblManufacturerEdit
+{
+  margin-top : 10px ;
+  margin-bottom : 10px ;
+  margin-left : auto ;
+  margin-right : auto ;
+}
+
+#divItemList
+{
+  margin-top : 10px ;
+  margin-bottom : 10px ;
+  margin-left : auto ;
+  margin-right : auto ;
+}
+
+#sltItemList
+{
+  width : 100% ;
+  margin-top : 0px ;
+  margin-bottom : 0px ;
+  margin-left : auto ;
+  margin-right : auto ;
+}
+
+table.tblItemEdit tr td , table.tblManufacturerEdit tr td
+{
+  font-family : Verdana , Arial , sans-serif ;
+  font-size : 18px ;
+  color : white ;
+  padding-top : 5px ;
+  padding-bottom : 5px ;
+  min-width : 200px ;
+}
+
+input.cssInpField
+{
+  padding-top : 3px ;
+  padding-bottom : 2px ;
+  padding-left : 5px ;
+  border-width : 1px 1px 1px 1px ;
+  border-color: rgb( 218 , 218 , 218 ) ;
+  border-style : solid solid solid solid ;
+  border-radius : 10px;
+  font-family : Verdana , Arial , sans-serif ;
+  font-size : 18px ;
+  color : rgb( 85 , 85 , 85 ) ;
+}
+
+#chbEditDiscontinued
+{
+  display : none ;
+}
+
+#chbEditDiscontinued + label
+{
+  border-width : 1px 1px 1px 1px ;
+  border-color: rgb( 218 , 218 , 218 ) ;
+  border-style : solid solid solid solid ;
+  border-radius : 5px;
+  background-color: white ;
+
+  display: inline-block ;
+  height : 20px ;
+  width : 20px ;
+
+  font-size : 16px;
+  font-family : Arial , Helvetica , sans-serif ;
+  text-align : center ;
+
+  vertical-align:bottom ;
+}
+
+#chbEditDiscontinued + label:hover
+{
+  cursor : pointer ;
+}
+
+#chbEditDiscontinued:checked + label:after
+{
+  content : '\2714';
+  color : rgb( 85 , 85 , 85 ) ;
+}
+
+div.cssDivDescription
+{
+  padding-bottom : 5px ;
+}
+
+textarea.cssTxaDescription , textarea.cssTxaAddress
+{
+  color : rgb( 85 , 85 , 85 ) ;
+  font-family:
+    Consolas,
+    Monaco,
+    Lucida Console,
+    Liberation Mono,
+    DejaVu Sans Mono,
+    Bitstream Vera Sans Mono,
+    Courier New,
+    monospace ;
+
+  padding-top: 2px ;
+  padding-bottom: 2px ;
+  padding-right: 2px ;
+  padding-left: 2px ;
+
+  border-width : 1px 1px 1px 1px ;
+  border-color: rgb( 218 , 218 , 218 ) ;
+  border-style : solid solid solid solid ;
+  border-radius : 10px;
+}
+
+#ulManufacturers , #ulItemList
+{
+  border-color: rgb( 218 , 218 , 218 ) ;
+  border-style : solid solid solid solid ;
+  border-radius : 10px;
+  background-color: white ;
+  max-width:300px;
+  margin-top : 10px ;
+}
+
+#ulManufacturers li , #ulItemList li
+{
+  border-bottom-color: rgb( 85 , 85 , 85 ) ;
+  border-bottom-style: solid ;
+  border-bottom-width: 1px ;
+  color: rgb( 85 , 85 , 85 ) ;
+  padding-left: 3px ;
+  padding-top:2px;
+  padding-bottom:2px ;
+}
+
+#ulItemList
+{
+  margin-left : 10px ;
+}
+
+#ulItemList li a
+{
+  font-family : Verdana , Arial , sans-serif ;
+}
+
+#ulManufacturers li:hover , #ulItemList li:hover
+{
+  background-color: rgb(220, 220, 220) ;
+  cursor : pointer ;
+}
+
+#ulManufacturers li.cssLiFirst ,
+#ulManufacturers li.cssLiFirst:hover ,
+#ulItemList li.cssLiFirst ,
+#ulItemList li.cssLiFirst:hover
+{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#ulManufacturers li.cssLiLast ,
+#ulManufacturers li.cssLiLast:hover ,
+#ulItemList li.cssLiLast ,
+#ulItemList li.cssLiLast:hover
+{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#ulManufacturers li.cssLiSelected ,
+#ulManufacturers li.cssLiSelected:hover
+{
+ background-color: blue ;
+ color : white ;
+}
+
+#ulManufacturers li.cssLiSelectedAlone ,
+#ulManufacturers li.cssLiSelectedAlone:hover
+{
+  border-radius : 10px;
+}
+
+#ulManufacturers li.cssLiHidden
+{
+  display : none ;
+}
+
+.cssFormButtom
+{
+  margin-bottom : 10px ;
+  margin-top : 0px ;
+  margin-left : auto ;
+  margin-right : auto ;
+  border-width : 1px 1px 1px 1px ;
+  border-color: rgb( 218 , 218 , 218 ) ;
+  border-style : solid solid solid solid ;
+  border-radius : 10px;
+
+  background-color:#dcdcdc ;
+  color : rgb( 85 , 85 , 85 ) ;
+
+  font-family : Verdana , Arial , sans-serif ;
+  font-size : 18px ;
+
+  padding-top : 5px ;
+  padding-bottom : 5px ;
+  padding-left : 10px ;
+  width : 250px ;
+
+  text-align: center ;
+  cursor: pointer;
+}
+
+.cssFormButtom:hover
+{
+  border-color: blue ;
+  background-color:blue;
+  color: white ;
+}
+
+.cssFormButtom:active
+{
+  border-color:#000088 ;
+  background-color: #000088 ;
+  color : white;
+}
+
+.cssFormButtom a
+{
+  color: inherit ;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+{
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0px; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+select , option , #sltSeeTheCode , #sltSeeTheCode option
+{
+  font-family : Verdana , Arial , sans-serif ;
+}

@@ -1,0 +1,21 @@
+<doctrine-mapping
+ xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                     http://raw.github.com/doctrine/doctrine2/master/doctrine-mapping.xsd">
+
+<entity name="KhgItem" table="_tblKhgItems">
+ <id name="_itemId" column="_id" type="integer">
+  <generator strategy="AUTO" />
+ </id>
+ <field name="_name" column="_name" type="string" length="128" />
+ <field name="_itemCode" column="_itemCode" type="string" length="128" />
+ <field name="_description" column="_description" type="string" length="1024" />
+ <field name="_stockCount" column="_stockCount" type="integer" />
+ <field name="_discontinued" column="_discontinued" type="boolean" />
+ <field name="_imageUrl" column="_imageUrl" type="string" length="128" />
+ <many-to-one field="_manufacturer" target-entity="KhgManufacturer" inversed-by="_items">
+  <join-column name="_manufacturerId" referenced-column-name="_id" />
+ </many-to-one>
+</entity>
+</doctrine-mapping>

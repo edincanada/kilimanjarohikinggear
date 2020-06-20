@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<!--
+ Kilimanjaro Hiking Gear Inventory System
+ Version 0.0.0, date/last/modified
+ Ed Arvelaez
+
+ Kilimanjaro Hiking Gear is an inventory website simulator that features seemless
+ server-side request-response interaction. It features the use of Doctrine as its
+ object-relational management system, and jquery ui for client side visual elements
+-->
+
+<meta name="description" content="Kilimanjaro Hiking Gear Inventory System" />
+<meta name="keywords" content="doctrine,mvc,jquery,ui,jsonp" />
+<meta name="author" content="Ed Arvelaez" />
+
+<meta http-equiv="content-type"  content="text/html;charset=utf-8" />
+<meta charset="utf-8" />
+
+<link type="text/css" rel="stylesheet" media="screen" href="/common/css/reset.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/common/jquery/jquery-ui.min.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="style.css" />
+
+<script type="text/javascript" src="/common/jquery/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="/common/jquery/purl.min.js"></script>
+<script type="text/javascript" src="/common/jquery/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="khgcommon.js"></script>
+<script type="text/javascript" src="khgmanufacturers.js"></script>
+<script type="text/javascript" src="khgdata.php?get=items&amp;assign=itemData"></script>
+<script type="text/javascript" src="khgdata.php?get=manufacturers&amp;assign=manufacturerData"></script>
+
+<title>Kilimanjaro Hiking Gear Inventory System</title>
+</head>
+<body id="bodyKilimanjaroHikingGear" class="cssBodyKilimanjaroHikingGear">
+ <div id="divHeader" class="cssDivHeader">
+  <span id="spanTitle" class="cssSpanTitle">Kilimanjaro Hiking Gear - Inventory System</span>
+  <div id="divOptions" class="cssDivOptions">
+   <a href="/apps/kilimanjarohikinggear/index.html" class="cssAncHeaderLink">Item List</a>
+   <a href="/apps/kilimanjarohikinggear/manufacturers.html" class="cssAncHeaderLink">Manufacturer List</a>
+   See the code:
+   <select id="sltSeeTheCode">
+     <option>Select a script</option>
+     <option value="http://edincanada.tech/apps/codedisplay/codedisplay.php?project=kilimanjarohikinggear&amp;file=KhgEntityManager_class_php.txt">Entity Manager</option>
+     <option value="http://edincanada.tech/apps/codedisplay/codedisplay.php?project=kilimanjarohikinggear&amp;file=KhgController_class_php.txt">Controller</option>
+     <option value="http://edincanada.tech/apps/codedisplay/codedisplay.php?project=kilimanjarohikinggear&amp;file=KhgJsonpView_class_php.txt">Jsonp view</option>
+     <option value="http://edincanada.tech/apps/codedisplay/codedisplay.php?project=kilimanjarohikinggear&amp;file=manufacturers_html.txt">Preprocessed markup</option>
+     <option value="http://edincanada.tech/apps/codedisplay/codedisplay.php?project=kilimanjarohikinggear&amp;file=khgmanufacturers_js.txt">Client script</option>
+   </select>
+  </div>
+ </div>
+ <div class="cssDivContentBackground">
+  <div id="divContent">
+   <div id="divManufacturerContainer" class="cssDivManufacturerContainer">
+    <div id="divManufacturers" class="cssDivManufacturers">
+    </div>
+   </div>
+   <div id="divInfo" class="cssDivInfo">
+     <div id="divName" class="cssDivInfoBox">
+       Name: <a id="ancName" href="#" title=""></a>
+     </div>
+     <div id="divAddress" class="cssDivInfoBox">
+       Address:
+       <div id="divInnerAddress">this is my address</div>
+     </div>
+     <div id="divPhoneNumber" class="cssDivInfoBox">
+       Phone number: <span id="spanPhoneNumber"></span>
+     </div>
+     <div id="divEmail" class="cssDivInfoBox">
+      Email: <span id="spanEmail"></span>
+     </div>
+     <div id="divItemList" class="cssDivItemList">
+      <ul id="ulItemList" class="cssUlItemList"></ul>
+     </div>
+   </div>
+  </div>
+  <div class="cssDivClear"></div>
+ </div>
+</body>
+</html>
